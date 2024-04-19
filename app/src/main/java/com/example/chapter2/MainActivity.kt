@@ -25,7 +25,12 @@ class MainActivity : AppCompatActivity() {
         var number = 0
 
         resetButton.setOnClickListener {
-
+            number = 0
+            numberTextView.text = number.toString()
+        }
+        plusButton.setOnClickListener {
+            number += 1
+            numberTextView.text = number.toString()
         }
     }
 }
